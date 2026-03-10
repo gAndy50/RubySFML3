@@ -8,7 +8,7 @@ require_relative 'sfmlsys'
 
 module SFML_AUDIO
 	extend FFI::Library
-	ffi_lib "C:/Users/g_and/OneDrive/Documents/Ruby/SFML3/csfml-audio-3.dll"
+	ffi_lib "csfml-audio-3.dll"
 	#Listener
 	class SfListenerCone < FFI::Struct
 		layout  :innerAngle, :float,
@@ -252,4 +252,5 @@ module SFML_AUDIO
 	attach_function :sfSoundStream_isLooping,[:pointer],:bool
 	attach_function :sfSoundStream_setEffectProcessor,[:pointer,:pointer],:void
 	attach_function :sfSoundStream_getPlayingOffset,[:pointer],SFML_SYSTEM::SfTime.by_value
+
 end
