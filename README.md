@@ -1,6 +1,6 @@
 # RubySFML3
 
-These are SFML 3 Bindings for Ruby.
+These are SFML 3 Bindings for Ruby. These use the Ruby Gem FFI.
 
 # EXAMPLE
 ```ruby
