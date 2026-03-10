@@ -7,7 +7,7 @@ require_relative 'sfmlsys'
 
 module SFML_WIN
 	extend FFI::Library
-	ffi_lib "C:/Users/g_and/OneDrive/Documents/Ruby/SFML3/csfml-window-3.dll"
+	ffi_lib "csfml-window-3.dll"
 	#VideoMode
 	class SfVideoMode < FFI::Struct
 		layout :size, SFML_SYSTEM::SfVector2u.by_value,
@@ -554,4 +554,5 @@ module SFML_WIN
   attach_function :sfContext_getFunction,[:string],:pointer
   attach_function :sfContext_getSettings,[:pointer],SfContextSettings.by_value
   attach_function :sfContext_getActiveContextId,[],:uint64
+
 end 
