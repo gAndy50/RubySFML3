@@ -23,7 +23,7 @@ win = sfRenderWindow_create(video_mode, "Logo Bounce Window", WindowStyle::Defau
 raise "Failed to create window" if win.null?
 
 #Full path to image under Windows
-tex = sfTexture_createFromFile("C:/Users/g_and/OneDrive/Documents/Ruby/sfml_logo.png",nil)
+tex = sfTexture_createFromFile("sfml_logo.png",nil)
 raise "Failed to load texture" if tex.null?
 
 sprite = sfSprite_create(tex)
@@ -88,4 +88,5 @@ end
 
 sfTexture_destroy(tex)
 sfSprite_destroy(sprite)
+
 sfRenderWindow_destroy(win)
