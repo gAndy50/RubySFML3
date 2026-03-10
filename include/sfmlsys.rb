@@ -6,7 +6,7 @@ require 'ffi'
 
 module SFML_SYSTEM
 	extend FFI::Library
-	ffi_lib "C:/Users/g_and/OneDrive/Documents/Ruby/SFML3/csfml-system-3.dll"
+	ffi_lib "csfml-system-3.dll"
 	#Alloc
 	attach_function :sfFree, [:pointer], :void
 	#Buffer
@@ -65,4 +65,5 @@ module SFML_SYSTEM
 		       :y, :float,
 		       :z,  :float
 	end
+
 end
