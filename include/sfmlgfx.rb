@@ -8,7 +8,7 @@ require_relative 'sfmlwin'
 
 module SFML_GRAPHICS
 	extend FFI::Library
-	ffi_lib "C:/Users/g_and/OneDrive/Documents/Ruby/SFML3/csfml-graphics-3.dll"
+	ffi_lib "csfml-graphics-3.dll"
 	#Blendmode
 	module SfBlendFactor
 		BlendFactorZero = 0
@@ -624,5 +624,6 @@ module SFML_GRAPHICS
 	attach_function :sfView_move,[:pointer,SFML_SYSTEM::SfVector2f.by_value],:void
 	attach_function :sfView_rotate,[:pointer,:float],:void
 	attach_function :sfView_zoom,[:pointer,:float],:void
+
 
 end
