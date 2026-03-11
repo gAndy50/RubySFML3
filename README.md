@@ -1,6 +1,6 @@
 # RubySFML3
 
-These are SFML 3 Bindings for Ruby. These use the Ruby Gem FFI.
+These are SFML 3 Bindings for Ruby. These use the Ruby Gem FFI. You will need to include the full path of where you have the DLLs/shared libraries under Windows. Same goes for assets such as images and audio. 
 
 # EXAMPLE
 ```ruby
